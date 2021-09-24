@@ -2,11 +2,16 @@ import React from 'react'
 
 export default class Grid extends React.Component {
     render (){
-        let rows = [1,2,3];
-        let columns = [1,2,3];
+        const {gameBord} = this.props
         return(
             <table>
-                {rows.map(row => <tr>{columns.map(col => <td>{row}_{col}</td>)}</tr>)}
+                {gameBord.map((row, row_index) => 
+                    <tr>
+                        {row.map((col, col_idex) => 
+                            <td>
+                                {row_index}{col_idex};
+                            </td>)}
+                    </tr>)}
             </table>
         );
     }
