@@ -1,57 +1,59 @@
 import React from 'react';
 import '../App.css';
 import Grid from "./Grid"
+import lexus from "../imgs/lexus.png"
+import cadillac from "../imgs/cadillac.png"
 
 let gameBordArr = [
     [
         {
             key: 1,
             index: 11,
-            frontFilePath: '1.png'
+            frontFilePath: lexus
         },
         {
             key: 2,
             index: 12,
-            frontFilePath: '1.png'
+            frontFilePath: cadillac
         },
         {
             key: 3,
             index: 13,
-            frontFilePath: '1.png'
+            frontFilePath: lexus
         }
     ],
     [
         {
             key: 4,
             index: 21,
-            frontFilePath: '1.png'
+            frontFilePath: cadillac
         },
         {
             key: 5,
             index: 22,
-            frontFilePath: '1.png'
+            frontFilePath: lexus
         },
         {
             key: 6,
             index: 23,
-            frontFilePath: '1.png'
+            frontFilePath: cadillac
         }
     ],
     [
         {
             key: 7,
             index: 31,
-            frontFilePath: '1.png'
+            frontFilePath: lexus
         },
         {
             key: 8,
             index: 32,
-            frontFilePath: '1.png'
+            frontFilePath: cadillac
         },
         {
             key: 9,
             index: 33,
-            frontFilePath: '1.png'
+            frontFilePath: lexus
         }],
 ];
 
