@@ -14,10 +14,10 @@ export default class DataGenerator {
                         frontPicture: this.getFrontPicture(frontPictures),
                         backPicture: backPicture
                     }
-                    /*if (frontPictures.length > 0) {
+                    if (frontPictures.length > 0) {
                         //Удаляем использованную картинку
-                        frontPictures.splice(frontPictures.indexOf(result[row_index, col_index].frontPicture, 0), 1);
-                    }*/
+                        frontPictures.splice(frontPictures.indexOf(result[row_index][col_index].frontPicture, 0), 1);
+                    }
                     keyIndex++;
                 }
             }

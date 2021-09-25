@@ -6,8 +6,7 @@ export default class Card extends React.Component {
         const { card } = this.props;
         return (
             <div key={card} width="100">
-                <img src={card.frontPicture}   className="App-logo" />
-                
+                <img src={card.frontPicture}   className="CardPic" onClick={()=>{}}/>
             </div>
         );
     }
