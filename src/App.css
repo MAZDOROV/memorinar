@@ -9,7 +9,8 @@
 }
 
 .CardPic {
-  height: 15vh;
+  height: 9vh;
+  width: auto;
   pointer-events: none;
   object-fit: cover;
 }

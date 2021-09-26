@@ -4,6 +4,10 @@ export default class DataGenerator {
 
             let result = [];
             let keyIndex = 0;
+            let countUnicumPic = Math.trunc(size.rows * size.columns / 2) + (size.rows * size.columns % 2);
+            let preparedPictures = this.getUnicumPic(frontPictures, countUnicumPic, 2);
+
+            console.log('countUnicumPic: ' + countUnicumPic);
 
             for (let row_index = 0; row_index < size.rows; row_index++) {
                 result.push([]);
@@ -11,12 +15,12 @@ export default class DataGenerator {
                     result[row_index][col_index] = {
                         key: 'card' + keyIndex,
                         index: row_index.toString() + col_index.toString(),
-                        frontPicture: this.getFrontPicture(frontPictures),
+                        frontPicture: this.getFrontPicture(preparedPictures),
                         backPicture: backPicture
                     }
-                    if (frontPictures.length > 0) {
+                    if (preparedPictures.length > 0) {
                         //Удаляем использованную картинку
-                        frontPictures.splice(frontPictures.indexOf(result[row_index][col_index].frontPicture, 0), 1);
+                        preparedPictures.splice(preparedPictures.indexOf(result[row_index][col_index].frontPicture, 0), 1);
                     }
                     keyIndex++;
                 }
@@ -25,15 +29,29 @@ export default class DataGenerator {
             return result;
         }
         //получаем случайную картинку из массива картинок
-        this.getFrontPicture = (frontPictures)=> {
+        this.getFrontPicture = (frontPictures) => {
             if (frontPictures.length > 0) {
                 let randIndex = this.getRandomInt(frontPictures.length);
                 return frontPictures[randIndex];
             }
             else return {};
         }
-        this. getRandomInt = (max)=> {
+        //получаем случайное число 
+        this.getRandomInt = (max) => {
             return Math.floor(Math.random() * (max));
+        }
+        this.getUnicumPic = (allPics, howManyGet, repeet) => {
+            let pictures = [...allPics];
+            let result = [];
+            for (let i = 0; i < howManyGet; i++) {
+                let index = this.getRandomInt(pictures.length);
+                for (let j = 0; j < repeet; j++)
+                {
+                    result.push(pictures[index])
+                }
+                pictures.splice(index, 1);
+            }
+            return result;
         }
     }
 }
