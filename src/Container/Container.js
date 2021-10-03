@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import Grid from "./Grid"
+import './App.css';
+import Grid from "../Components/Grid"
 import DataGenerator from "../Store/DataGenerator"
 import PictureGenerator from "../Store/PictureGenegator"
 
