@@ -1,5 +1,8 @@
+
+
 export default class DataGenerator {
     constructor() {
+        ///Возвращает массив масивов 
         this.generate = (size, frontPictures, backPicture) => {
 
             let result = [];
