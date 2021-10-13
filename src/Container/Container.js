@@ -7,7 +7,8 @@ import PictureGenerator from "../Store/PictureGenegator"
 let pictureGenerator = new PictureGenerator();
 let generator = new DataGenerator();
 let frontPictures = pictureGenerator.getFrontPictures();
-let gameBordArr = generator.generate({rows:5,columns:5}, frontPictures,{})
+let backPictures = pictureGenerator.getBackPictures();
+let gameBordArr = generator.generate({rows:5,columns:5}, frontPictures, backPictures)
 
 export default class Container extends React.Component {
     render() {

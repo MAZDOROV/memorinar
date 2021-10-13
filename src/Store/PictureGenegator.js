@@ -49,6 +49,7 @@ import subaru from "../imgs/subaru.png"
 import suzuki from "../imgs/suzuki.png"
 import toyota from "../imgs/toyota.png"
 import uaz from "../imgs/uaz.png"
+import back from "../imgs/back.png"
 
 
 export default class PictureGenerator {
@@ -60,6 +61,8 @@ export default class PictureGenerator {
                 infiniti, jaguar, lotus, maserati, mazda, mclaren, mercedes, mini, opel, peugeot,
                 porsche, ravon, renault, rolls_royce, saab, skoda, ssang_yong, subaru, suzuki, toyota, 
                 uaz ];
-        }
+        };
+
+        this.getBackPictures=()=>{return [back]}
     }
 }
