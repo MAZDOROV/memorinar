@@ -3,13 +3,13 @@
 export default class DataGenerator {
     constructor() {
         ///Возвращает массив масивов 
-        this.generate = (size, frontPictures, backPicture) => {
+        this.generate = (size, frontPictures, backPictures) => {
 
             let result = [];
             let keyIndex = 0;
             let countUnicumPic = Math.trunc(size.rows * size.columns / 2) + (size.rows * size.columns % 2);
             let preparedPictures = this.getUnicumPic(frontPictures, countUnicumPic, 2);
-
+            let backPicture = this.getPicture(backPictures);
             console.log('countUnicumPic: ' + countUnicumPic);
 
             for (let row_index = 0; row_index < size.rows; row_index++) {
@@ -18,8 +18,9 @@ export default class DataGenerator {
                     result[row_index][col_index] = {
                         key: 'card' + keyIndex,
                         index: row_index.toString() + col_index.toString(),
-                        frontPicture: this.getFrontPicture(preparedPictures),
-                        backPicture: backPicture
+                        frontPicture: this.getPicture(preparedPictures),
+                        backPicture: backPicture,
+                        frontShown: false
                     }
                     if (preparedPictures.length > 0) {
                         //Удаляем использованную картинку
@@ -32,10 +33,10 @@ export default class DataGenerator {
             return result;
         }
         //получаем случайную картинку из массива картинок
-        this.getFrontPicture = (frontPictures) => {
-            if (frontPictures.length > 0) {
-                let randIndex = this.getRandomInt(frontPictures.length);
-                return frontPictures[randIndex];
+        this.getPicture = (pictures) => {
+            if (pictures.length > 0) {
+                let randIndex = this.getRandomInt(pictures.length);
+                return pictures[randIndex];
             }
             else return {};
         }
