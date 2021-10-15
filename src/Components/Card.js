@@ -8,8 +8,8 @@ export default class Card extends React.Component {
         return (
             <div key={card} width="100">
                 
-                <img src={picture} className="CardPic" alt='' onClick={() => { console.log('клик'); }} />
-            </div>
+                <img src={picture} className="CardPic rounded" alt='' onClick={() => { console.log('клик'); }} />
+            </div> 
         );
     }
 }
