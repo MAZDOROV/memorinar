@@ -4,9 +4,9 @@ const initialSatet = {
 
 export const boardReducer = (state = initialSatet, action) => {
     switch (action.type) {
-        case "": state = [...state];  
+        case "": state = [...state];
             break;
-        default:  
+        default:
             break;
     }
     return state;

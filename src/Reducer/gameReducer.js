@@ -1,5 +1,5 @@
 const initialSatet = {
-    pause:false,
+    pause: false,
     gameTime: 0
 }
 

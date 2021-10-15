@@ -53,16 +53,16 @@ import back from "../imgs/back.png"
 
 
 export default class PictureGenerator {
-    constructor(){
-        this.getFrontPictures=()=>{
-            return [lexus, cadillac, lamborghini, vaz, volkswagen, volvo, wiesmann, acura, alfa_romeo, aston_martin, 
-                audi, bentley, bmw, brilliance, bugatti, buick, chevrolet, chrysler, citroen, dacia, 
-                daewoo, ferrari, ford, gac, gaz, great_wall, haima, holden, honda, hyundai, 
+    constructor() {
+        this.getFrontPictures = () => {
+            return [lexus, cadillac, lamborghini, vaz, volkswagen, volvo, wiesmann, acura, alfa_romeo, aston_martin,
+                audi, bentley, bmw, brilliance, bugatti, buick, chevrolet, chrysler, citroen, dacia,
+                daewoo, ferrari, ford, gac, gaz, great_wall, haima, holden, honda, hyundai,
                 infiniti, jaguar, lotus, maserati, mazda, mclaren, mercedes, mini, opel, peugeot,
-                porsche, ravon, renault, rolls_royce, saab, skoda, ssang_yong, subaru, suzuki, toyota, 
-                uaz ];
+                porsche, ravon, renault, rolls_royce, saab, skoda, ssang_yong, subaru, suzuki, toyota,
+                uaz];
         };
 
-        this.getBackPictures=()=>{return [back]}
+        this.getBackPictures = () => { return [back] }
     }
 }

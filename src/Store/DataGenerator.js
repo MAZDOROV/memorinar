@@ -49,8 +49,7 @@ export default class DataGenerator {
             let result = [];
             for (let i = 0; i < howManyGet; i++) {
                 let index = this.getRandomInt(pictures.length);
-                for (let j = 0; j < repeet; j++)
-                {
+                for (let j = 0; j < repeet; j++) {
                     result.push(pictures[index])
                 }
                 pictures.splice(index, 1);
