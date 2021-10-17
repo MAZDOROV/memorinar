@@ -12,12 +12,6 @@ export function stopGame() {
     }
 }
 
-export function showAllCards() {
-    return {
-        type: SHOW_ALL_CARDS
-    }
-}
-
 export function pauseGame() {
     return {
         type: PAUSE_GAME

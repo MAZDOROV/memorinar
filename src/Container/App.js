@@ -2,14 +2,6 @@
 import './App.css';
 import Grid from "../Components/Grid"
 import Menu from "../Components/Menu"
-import DataGenerator from "../Store/DataGenerator"
-import PictureGenerator from "../Store/PictureGenegator"
-
-let pictureGenerator = new PictureGenerator();
-let generator = new DataGenerator();
-let frontPictures = pictureGenerator.getFrontPictures();
-let backPictures = pictureGenerator.getBackPictures();
-let gameBoardArr = generator.generate({ rows: 5, columns: 5 }, frontPictures, backPictures)
 
 function App() {
   return (

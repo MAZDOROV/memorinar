@@ -17,7 +17,6 @@ const Grid = ({ gameBord }) => {
                         }
                     </tr>)
                 :<></>
-
             }
             </tbody>
         </table>
