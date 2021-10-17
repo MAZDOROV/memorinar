@@ -3,13 +3,11 @@ import Card from './Card';
 import { connect } from 'react-redux';
 
 const Grid = ({ gameBord }) => {
-    
+
     return (
         <table>
-            <tbody>
-
-                {
-                gameBord.length?    
+            <tbody>{
+                gameBord.map?
                 gameBord.map((row, row_index) =>
                     <tr key={row_index}>
                         {row.map((cell, col_idex) =>
@@ -18,9 +16,9 @@ const Grid = ({ gameBord }) => {
                             </td>)
                         }
                     </tr>)
-                    :
-                    <div>Игравое поле</div>
-                }
+                :<></>
+
+            }
             </tbody>
         </table>
     );
