@@ -1,9 +1,14 @@
-
+import PictureGenerator from "./PictureGenegator";
 
 export default class DataGenerator {
+    
     constructor() {
+        let pictureGenerator = new PictureGenerator();
+        let frontPictures = pictureGenerator.getFrontPictures();
+        let backPictures = pictureGenerator.getBackPictures();
+
         ///Возвращает массив масивов 
-        this.generate = (size, frontPictures, backPictures) => {
+        this.generate = (size) => {
 
             let result = [];
             let keyIndex = 0;
