@@ -1,4 +1,4 @@
-import { START_GAME, STOP_GAME, PAUSE_GAME, SHOW_ALL_CARDS } from "../Constants"
+import { START_GAME, STOP_GAME, PAUSE_GAME } from "../Constants"
 
 export function startGame() {
     return {

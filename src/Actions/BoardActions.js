@@ -2,7 +2,8 @@ import { CARD_CLICK, SHOW_ALL_CARDS } from "../Constants";
 
 export function cardClick(card) {
     return {
-        type: CARD_CLICK
+        type: CARD_CLICK,
+        payload: card
     }
 }
 

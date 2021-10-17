@@ -1,4 +1,4 @@
-import { START_GAME, STOP_GAME, SHOW_ALL_CARDS } from "../Constants";
+import { START_GAME, STOP_GAME, SHOW_ALL_CARDS, CARD_CLICK } from "../Constants";
 import DataGenerator from "../Store/DataGenerator"
 
 const initialSatet = {
@@ -23,6 +23,9 @@ export const boardReducer = (state = initialSatet, action) => {
             return [...state]
         case SHOW_ALL_CARDS:
             showAll(state)
+            return [...state]
+        case CARD_CLICK:
+            action.payload.frontShown = true
             return [...state]
         default:
             return state
