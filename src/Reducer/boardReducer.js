@@ -1,4 +1,4 @@
-import { START_GAME, STOP_GAME, SHOW_ALL_CARDS, CARD_CLICK } from "../Constants";
+import { START_GAME, STOP_GAME, SHOW_ALL_CARDS, CARD_CLICK, CARD_UNVISIBLE, CARD_VISIBLE } from "../Constants";
 import DataGenerator from "../Store/DataGenerator"
 
 const initialSatet = {
@@ -16,7 +16,7 @@ export const boardReducer = (state = initialSatet, action) => {
     switch (action.type) {
         case START_GAME:
             let generator = new DataGenerator();
-            state = generator.generate({ rows: 5, columns: 5 })
+            state = generator.generate({ rows: 7, columns: 5 })
             return [...state];
         case STOP_GAME:
             state = []
@@ -25,7 +25,13 @@ export const boardReducer = (state = initialSatet, action) => {
             showAll(state)
             return [...state]
         case CARD_CLICK:
-            action.payload.frontShown = true
+            action.payload.frontShown = !action.payload.frontShown
+            return [...state]
+        case CARD_VISIBLE:
+            action.payload.visible = true
+            return [...state]
+        case CARD_UNVISIBLE:
+            action.payload.visible = false
             return [...state]
         default:
             return state

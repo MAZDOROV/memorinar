@@ -1,7 +1,7 @@
 import PictureGenerator from "./PictureGenegator";
 
 export default class DataGenerator {
-    
+
     constructor() {
         let pictureGenerator = new PictureGenerator();
         let frontPictures = pictureGenerator.getFrontPictures();
@@ -25,7 +25,8 @@ export default class DataGenerator {
                         index: row_index.toString() + col_index.toString(),
                         frontPicture: this.getPicture(preparedPictures),
                         backPicture: backPicture,
-                        frontShown: false
+                        frontShown: false,
+                        visible: true
                     }
                     if (preparedPictures.length > 0) {
                         //Удаляем использованную картинку
