@@ -1,5 +1,15 @@
-.App {
+.app {
+  padding: 10px;
   text-align: center;
+}
+
+.app-header {
+  display: flex;
+}
+
+.app-content {
+  height: 80vmin;
+  border: 1px solid red;
 }
 
 .App-logo {
@@ -18,19 +28,10 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
-  }
+  } 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -43,4 +44,22 @@
   to {
     transform: rotate(360deg) rotatex(360deg) rotatey(360deg);
   }
+}
+
+.board{
+  background-color: #282c34;
+  padding: 20px;
+  width: 100%;
+}
+
+.board-row{
+  display: flex;
+}
+
+.board-cell{
+  margin: 2px;
+}
+
+.board-card {
+  
 }
