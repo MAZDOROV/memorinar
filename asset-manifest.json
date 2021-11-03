@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/memorinar/static/css/main.5b7c3e0b.chunk.css",
-    "main.js": "/memorinar/static/js/main.3647f16b.chunk.js",
-    "main.js.map": "/memorinar/static/js/main.3647f16b.chunk.js.map",
-    "runtime-main.js": "/memorinar/static/js/runtime-main.3627a343.js",
-    "runtime-main.js.map": "/memorinar/static/js/runtime-main.3627a343.js.map",
-    "static/js/2.4ece3776.chunk.js": "/memorinar/static/js/2.4ece3776.chunk.js",
-    "static/js/2.4ece3776.chunk.js.map": "/memorinar/static/js/2.4ece3776.chunk.js.map",
-    "static/js/3.fb40bf73.chunk.js": "/memorinar/static/js/3.fb40bf73.chunk.js",
-    "static/js/3.fb40bf73.chunk.js.map": "/memorinar/static/js/3.fb40bf73.chunk.js.map",
+    "main.css": "/memorinar/static/css/main.5c8f8fc8.chunk.css",
+    "main.js": "/memorinar/static/js/main.00f18de5.chunk.js",
+    "main.js.map": "/memorinar/static/js/main.00f18de5.chunk.js.map",
+    "runtime-main.js": "/memorinar/static/js/runtime-main.99a34998.js",
+    "runtime-main.js.map": "/memorinar/static/js/runtime-main.99a34998.js.map",
+    "static/js/2.3252878c.chunk.js": "/memorinar/static/js/2.3252878c.chunk.js",
+    "static/js/2.3252878c.chunk.js.map": "/memorinar/static/js/2.3252878c.chunk.js.map",
+    "static/js/3.7c2c38dd.chunk.js": "/memorinar/static/js/3.7c2c38dd.chunk.js",
+    "static/js/3.7c2c38dd.chunk.js.map": "/memorinar/static/js/3.7c2c38dd.chunk.js.map",
     "index.html": "/memorinar/index.html",
-    "static/css/main.5b7c3e0b.chunk.css.map": "/memorinar/static/css/main.5b7c3e0b.chunk.css.map",
-    "static/js/2.4ece3776.chunk.js.LICENSE.txt": "/memorinar/static/js/2.4ece3776.chunk.js.LICENSE.txt",
+    "static/css/main.5c8f8fc8.chunk.css.map": "/memorinar/static/css/main.5c8f8fc8.chunk.css.map",
+    "static/js/2.3252878c.chunk.js.LICENSE.txt": "/memorinar/static/js/2.3252878c.chunk.js.LICENSE.txt",
     "static/media/acura.f5f3e4d0.png": "/memorinar/static/media/acura.f5f3e4d0.png",
     "static/media/alfa_romeo.df4e0dc8.png": "/memorinar/static/media/alfa_romeo.df4e0dc8.png",
     "static/media/aston_martin.926b57ba.png": "/memorinar/static/media/aston_martin.926b57ba.png",
@@ -64,9 +64,9 @@
     "static/media/wiesmann.57b6e318.png": "/memorinar/static/media/wiesmann.57b6e318.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3627a343.js",
-    "static/js/2.4ece3776.chunk.js",
-    "static/css/main.5b7c3e0b.chunk.css",
-    "static/js/main.3647f16b.chunk.js"
+    "static/js/runtime-main.99a34998.js",
+    "static/js/2.3252878c.chunk.js",
+    "static/css/main.5c8f8fc8.chunk.css",
+    "static/js/main.00f18de5.chunk.js"
   ]
 }
