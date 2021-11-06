@@ -10,14 +10,11 @@ const Menu = () => {
 
     return (
         <div className="menu">
-            <div className="btn" onClick={() => dispatch(startGame())}>New Game</div>
-            <div className="btn" onClick={() => dispatch(showAllCards())}>Show all</div>
-            <div className="btn">Pause</div>
+            <div className="btn" onClick={() => dispatch(startGame())}>New</div>
+            <div className="btn" onClick={() => dispatch(showAllCards())}>All</div>
+{/*             <div className="btn">Pause</div>
             <div className="btn" onClick={() => dispatch(stopGame())}>Stop</div>
-            <div className="btn">Save</div>
-            <div className="timer">
-                <span>00:00:00</span>
-            </div>
+            <div className="btn">Save</div> */}
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import { START_GAME, STOP_GAME, PAUSE_GAME } from "../Constants";
 const initialState = {
     pause: false,
-    gameTime: 0
+    time: 0
 }
 
 export const gameReducer = (state = initialState, action) => {

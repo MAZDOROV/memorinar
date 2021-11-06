@@ -16,7 +16,7 @@ export const boardReducer = (state = initialSatet, action) => {
     switch (action.type) {
         case START_GAME:
             let generator = new DataGenerator();
-            state = generator.generate({ rows: 7, columns: 5 })
+            state = generator.generate({ rows: 6, columns: 6 })
             return [...state];
         case STOP_GAME:
             state = []
