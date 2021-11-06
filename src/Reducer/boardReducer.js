@@ -1,9 +1,8 @@
 import { START_GAME, STOP_GAME, SHOW_ALL_CARDS, CARD_CLICK, CARD_UNVISIBLE, CARD_VISIBLE } from "../Constants";
 import DataGenerator from "../Store/DataGenerator"
 
-const initialSatet = {
+const initialSatet = []
 
-}
 function showAll(state) {
     for (let i = 0; i < state.length; i++) {
         for (let j = 0; j < state[i].length; j++) {
@@ -36,5 +35,4 @@ export const boardReducer = (state = initialSatet, action) => {
         default:
             return state
     }
-    return state;
 }

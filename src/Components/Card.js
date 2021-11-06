@@ -5,7 +5,7 @@ import { cardClick } from '../Actions/BoardActions';
 
 export default ({ card }) => {
     const dispatch = useDispatch()
-    if (card.visible == false)
+    if (card.visible === false)
     {
         return (<div className='board-card' key={card}></div>)
     }
@@ -16,4 +16,3 @@ export default ({ card }) => {
         </div>
     );
 }
-
