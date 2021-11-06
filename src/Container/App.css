@@ -1,15 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 .app {
-  padding: 10px;
-  text-align: center;
+
+  background: rgb(107, 107, 107);
+  border: 1px solid blue;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .app-header {
-  display: flex;
+  width: 100%;
 }
 
 .app-content {
-  height: 80vmin;
-  border: 1px solid red;
+  border: 2px solid red;
+  height: 60vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -18,48 +27,86 @@
   object-fit: cover;
 }
 
-.CardPic {
-  height: 9vh;
-  width: auto;
-  pointer-events: none;
-  object-fit: cover;
+.board {
+  background-color: #282c34;
+  width: 100%;
+}
+
+.board-row {
+  display: flex;
+  flex-basis: 0;
+  width: 100%;
+}
+
+.board-cell {
+  margin: 1px;
+  border: 2px solid #454545;
+  border-radius: 20px;
+}
+
+.board-cell:hover {
+  opacity: 0.9;
+ 
+}
+
+.board-card {
+  padding: 0;
+  margin: 0;
+}
+
+.card-img {
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  max-height: 70px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px 0 5px;
+}
+
+.menu .btn {
+  background-color: #282c34;
+  border: 1px solid #111;
+  border-radius: 5px 5px 0px 0px;
+  color: aliceblue;
+  padding: 3px 10px;
+  margin: 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.timer {
+  color: aliceblue;
+  background-color: #282c34;
+  padding: 3px 10px;
+  margin-left: 10px;
+  border-radius: 5px 10px 0px 0px;
+}
+
+.timer:hover {
+  cursor: default;
+}
+.App-link {
+  color: #61dafb;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
-  } 
-}
-
-
-
-.App-link {
-  color: #61dafb;
+  }
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg)  rotatex(0deg) rotatey(0deg);
+    transform: rotate(0deg) rotatex(0deg) rotatey(0deg);
   }
   to {
     transform: rotate(360deg) rotatex(360deg) rotatey(360deg);
   }
-}
-
-.board{
-  background-color: #282c34;
-  padding: 20px;
-  width: 100%;
-}
-
-.board-row{
-  display: flex;
-}
-
-.board-cell{
-  margin: 2px;
-}
-
-.board-card {
-  
 }

@@ -7,13 +7,12 @@ export default ({ card }) => {
     const dispatch = useDispatch()
     if (card.visible == false)
     {
-        return (<></>)
+        return (<div className='board-card' key={card}></div>)
     }
+
     return (
         <div className='board-card' key={card}>
-            <button className='btn btn-secondary' onClick={() => dispatch(cardClick(card))}>
-                <img className='card-img' src={card.frontShown ? card.frontPicture : card.backPicture} className="CardPic rounded" alt='' />
-            </button>
+            <img className='card-img' onClick={() => dispatch(cardClick(card))} src={card.frontShown ? card.frontPicture : card.backPicture} alt='' />
         </div>
     );
 }
