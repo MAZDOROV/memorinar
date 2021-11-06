@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memorinar/static/css/main.a0dea3ff.chunk.css",
+    "main.css": "/memorinar/static/css/main.476b3c84.chunk.css",
     "main.js": "/memorinar/static/js/main.2350f35b.chunk.js",
     "main.js.map": "/memorinar/static/js/main.2350f35b.chunk.js.map",
     "runtime-main.js": "/memorinar/static/js/runtime-main.3627a343.js",
@@ -10,7 +10,7 @@
     "static/js/3.fb40bf73.chunk.js": "/memorinar/static/js/3.fb40bf73.chunk.js",
     "static/js/3.fb40bf73.chunk.js.map": "/memorinar/static/js/3.fb40bf73.chunk.js.map",
     "index.html": "/memorinar/index.html",
-    "static/css/main.a0dea3ff.chunk.css.map": "/memorinar/static/css/main.a0dea3ff.chunk.css.map",
+    "static/css/main.476b3c84.chunk.css.map": "/memorinar/static/css/main.476b3c84.chunk.css.map",
     "static/js/2.4ece3776.chunk.js.LICENSE.txt": "/memorinar/static/js/2.4ece3776.chunk.js.LICENSE.txt",
     "static/media/acura.f5f3e4d0.png": "/memorinar/static/media/acura.f5f3e4d0.png",
     "static/media/alfa_romeo.df4e0dc8.png": "/memorinar/static/media/alfa_romeo.df4e0dc8.png",
@@ -66,7 +66,7 @@
   "entrypoints": [
     "static/js/runtime-main.3627a343.js",
     "static/js/2.4ece3776.chunk.js",
-    "static/css/main.a0dea3ff.chunk.css",
+    "static/css/main.476b3c84.chunk.css",
     "static/js/main.2350f35b.chunk.js"
   ]
 }
