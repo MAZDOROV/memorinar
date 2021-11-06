@@ -5,7 +5,7 @@ const Timer = ({ time }) => {
 
     return (
         <div className="timer">
-            <span>00:00:00</span>
+            <span>00:00:{time}</span>
         </div>
     );
 }
@@ -13,7 +13,7 @@ const Timer = ({ time }) => {
 const mapStateToProps = state => {
     console.log(state);
     return {
-        time: state.game.time
+        time: state.game.timer.time
     }
 }
 
