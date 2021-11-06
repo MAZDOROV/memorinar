@@ -20,47 +20,6 @@
   height: 60vh;
   width: 100vw;
 }
-
-.App-logo {
-  height: 30vh;
-  pointer-events: none;
-  object-fit: cover;
-}
-
-.board {
-  background-color: #282c34;
-  width: 100%;
-}
-
-.board-row {
-  display: flex;
-  flex-basis: 0;
-  width: 100%;
-}
-
-.board-cell {
-  margin: 1px;
-  border: 2px solid #454545;
-  border-radius: 20px;
-}
-
-.board-cell:hover {
-  opacity: 0.9;
- 
-}
-
-.board-card {
-  padding: 0;
-  margin: 0;
-}
-
-.card-img {
-  border-radius: 20px;
-  padding: 0;
-  margin: 0;
-  max-height: 70px;
-}
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -92,8 +51,52 @@
 .timer:hover {
   cursor: default;
 }
+
 .App-link {
   color: #61dafb;
+}
+
+.App-logo {
+  height: 30vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.board {
+  background-color: #282c34;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.board-row {
+  display: flex;
+  flex-basis: 0;
+  width: 100%;
+}
+
+.board-cell {
+  margin: 1px;
+  border: 2px solid #454545;
+  border-radius: 20px;
+}
+
+.board-cell:hover {
+  opacity: 0.9;
+ 
+}
+
+.board-card {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card-img {
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  max-height: 70px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
