@@ -11,10 +11,8 @@ const Grid = ({ gameBord }) => {
                     gameBord.map((row, row_index) =>
                         <div className='board-row' key={row_index}>
                             {row.map((cell, col_idex) =>
-                                <div className='board-cell' key={(row_index.toString() + col_idex.toString())}>
-                                    <Card card={cell} />
-                                </div>)
-                            }
+                                <Card card={cell} key={(row_index.toString() + col_idex.toString())} />
+                            )}
                         </div>)
                     : <></>
             }
