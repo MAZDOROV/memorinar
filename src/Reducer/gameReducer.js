@@ -45,12 +45,12 @@ export const gameReducer = (state = initialState, action) => {
                 let unicumIds = getUnique(state.clickedCards.map(card => { return card.contentId })).length
                 if (unicumIds === 1) {
                     state.clickedCards.forEach(card => {
-                        setTimeout(() => { card.visible = false }, 100)
+                        card.visible = false
                     });
                 }
                 else {
                     state.clickedCards.forEach(card => {
-                        setTimeout(() => { card.frontShown = false }, 100)
+                        card.frontShown = false 
                     });
                 }
                 state.clickedCards = []
@@ -68,8 +68,5 @@ export const gameReducer = (state = initialState, action) => {
         default:
             return state;
     }
-
-
-
 
 }
