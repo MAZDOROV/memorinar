@@ -15,7 +15,7 @@ export const boardReducer = (state = initialSatet, action) => {
     switch (action.type) {
         case START_GAME:
             let generator = new DataGenerator();
-            state = generator.generate({ rows: 6, columns: 6 })
+            state = generator.generate({ rows: 4, columns: 4 })
             return [...state];
         case STOP_GAME:
             state = []
@@ -24,7 +24,7 @@ export const boardReducer = (state = initialSatet, action) => {
             showAll(state)
             return [...state]
         case CARD_CLICK:
-            action.payload.frontShown = !action.payload.frontShown
+           /*  action.payload.frontShown = true */
             return [...state]
         case CARD_VISIBLE:
             action.payload.visible = true
