@@ -20,13 +20,17 @@ export default class DataGenerator {
             for (let row_index = 0; row_index < size.rows; row_index++) {
                 result.push([]);
                 for (let col_index = 0; col_index < size.columns; col_index++) {
+                    const contentPicture = this.getPicture(preparedPictures)
+                    
                     result[row_index][col_index] = {
                         key: 'card' + keyIndex,
                         index: row_index.toString() + col_index.toString(),
-                        frontPicture: this.getPicture(preparedPictures),
+                        frontPicture: contentPicture,
+                        contentId: contentPicture,
                         backPicture: backPicture,
                         frontShown: false,
                         visible: true
+
                     }
                     if (preparedPictures.length > 0) {
                         //Удаляем использованную картинку
