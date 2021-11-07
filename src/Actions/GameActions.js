@@ -1,4 +1,10 @@
-import { START_GAME, STOP_GAME, PAUSE_GAME, INCREMENT_TIME, RESET_TIME, STOP_TIMER } from "../Constants"
+import { START_GAME, STOP_GAME, PAUSE_GAME, INCREMENT_TIME, RESET_TIME, STOP_TIMER, _INIT_ } from "../Constants"
+
+export function init() {
+    return {
+        type: _INIT_
+    }
+} 
 
 export function startGame() {
     return {

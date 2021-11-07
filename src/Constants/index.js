@@ -1,3 +1,5 @@
+export const _INIT_ = "STORE/INIT" 
+
 export const START_GAME = 'GAME/START_GAME'
 export const STOP_GAME = 'GAME/STOP_GAME'
 export const PAUSE_GAME = 'GAME/PAUSE_GAME'
